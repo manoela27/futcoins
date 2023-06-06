@@ -1,0 +1,323 @@
+
+@mixin md{
+    @media (min-width: 1200px) { @content; }
+}
+$color-secondary: #939393;
+$black: #000000;
+$gray: #757575;
+$gray-light: #404040;
+$gray-dark: #262626;
+$gray-darker: #1F1F1F;
+$white: #D7D7D7;
+
+header{
+        color: #000000;
+    .logo{
+        color: #939393;
+    }
+    .menu-mob-open {
+        color: $white;
+    }
+    .header-top{
+        background-color: #000000;
+
+        .header-infos{
+            background-color: #000000;
+            
+            
+            .link-inter{
+                .icon-link-inter{
+                    color: #939393;
+                }
+                &:hover{
+                    a{
+                        background-color:#939393 ;
+                        color: #000000;
+                    }
+                    .icon-link-inter{
+                        color: #000000;
+                    }
+                }
+            }
+        }
+        .header-nav{
+            background-color: #000000;
+            border: 1px solid #939393;
+            border-left: none;
+            border-right: none;
+            nav{
+                ul{
+                    li{
+                        &.hover{
+                            a{
+                                &::before{
+                                    background-color: #939393;
+                                }
+                            }
+                        }
+                        .child-container{
+                            background-color: #000000;
+                            ul{
+                                li{
+                                    .menu-title{
+                                        color: #FFFFFF!important;
+                                    }
+                                    .see-all{
+                                        color: #939393;
+                                    }
+                                }
+                                .menu-links{
+                                    a{
+                                        background-color: #939393;
+                                        color: #000000;
+
+                                        &:hover{
+                                            background-color: #FFFFFF;
+                                        }
+                                    }
+                                }
+                            }
+                        }                
+                        a {
+                            color: #939393;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .links-usuario{ 
+        a {
+        color: #939393;
+        }
+        .central{
+            .menu-central{
+                background-color: #000000;
+                a{
+                    color: #939393;
+                }
+            }
+        }
+        .cart-header{
+            .menu-cart, .cart-note {
+				.cart-products, .cart-added {
+					li{
+						.product-data {
+							h3 {
+								color: #939393;
+							}
+							.product-price {
+								color: #939393;
+								
+							}
+						}
+					}
+				}
+				
+			}
+            .menu-cart{
+                background-color: #000000;
+                border: 1px solid #939393;
+
+                .cart-products{
+                    .product-data{
+                        h3{
+                            color: #939393;
+                        }
+                        .product-price{
+                            color: #939393;
+                        }
+                    }
+                }
+                .cart-subtotal{
+                    color: #939393;
+                }
+                a{
+                    background-color: #939393;
+                    color: #000000;
+                }
+            }
+        }
+    }
+    
+}
+@media (max-width: 991px) {
+	header {
+		.header-nav {
+			nav {
+				.nav-top {
+					background: $black;
+					color: $white;
+					i {
+						color: $white;
+					}
+				}
+				ul {
+					background: #1F1F1F;
+
+					li {
+						border-color: $gray-light;
+
+						i {
+							color: $gray;
+						}
+
+						&.link-user {
+							background: $color-secondary;
+
+							a, i {
+								color: $black;
+							}
+						}
+
+						&.back {
+							background: $color-secondary;
+							color: $black;
+
+							i {
+								color: $black;
+							}
+						}
+
+						a {
+							color: $white;
+							
+							&.link-inter {
+								border-color: $white !important;
+							}
+						}
+
+						&.menu-feature {
+							background: #333333;
+
+							a {
+								color: $white;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	footer {
+		background: black;
+		color: $gray-light;
+		border-top: 1px solid $gray;
+		.footer-menus {
+			h3[data-toggle="collapse"] {
+				border-color: $gray-light;
+
+				i {
+					color: $gray;
+				}
+			}
+
+			ul {
+				border-color: $black;
+			}
+		}
+	}
+}
+
+p{
+    margin-bottom: 0px;
+}
+.topo{
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    .img-top{
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        height: 300px;
+    }
+}
+.c-home{
+    background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/supercraquepele/bg-mob-pele.png');
+    min-height: 100vh; 
+    
+    position: relative;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    @include md{
+        background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/supercraquepele/bg-desk-pele.png');
+    }
+
+    .home{
+        &-shield{
+
+        }
+        &-text{
+            color:#FFFFFF;
+
+            &_title{
+                height: 60px;
+                text-align: center;
+
+                @include md{
+                    min-height: 100px;
+                }
+            }
+
+            &_subtitle{
+                font-size: 35px;
+                font-weight: 700;
+                padding-top: 12px;
+                padding-bottom: 24px;
+                text-align: center;
+
+                @include md{
+                    text-align: start;
+                    font-size: 30px;
+                }
+            }
+            &_content{
+                padding-top: 16px;
+                font-size: 18px;
+                text-align: center;
+                margin-bottom: 32px;
+                
+
+                @include md{
+                    padding-top: 0;
+                    font-size: 20px;
+                    margin-bottom: 0px;
+                    padding: 0px 80px;
+                }
+                
+            }
+        }
+    }
+
+    .icon-home{
+        position: absolute;
+        bottom: 20px;
+        color: #fff;
+        left: 49%;
+        font-size: 40px;
+        animation: icon-down 3s linear infinite;
+
+        @keyframes icon-down {
+            0%{
+                transform:translateY(0px);
+            }
+            50%{
+                transform:translateY(10px);
+            }
+            100%{
+                transform:translateY(0px);
+            }
+        }
+        @include md{
+            bottom: 3%;
+            font-size: 30px;
+        }
+    }
+        
+}

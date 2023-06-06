@@ -1,0 +1,30 @@
+
+//sass --watch assets/css/scss/pages/descontos-fut.min.scss:assets/css/descontos-fut.min.css
+
+$vitrine-blue: #192C53;
+$vitrine-gray: #747474;
+
+//@import "../_lib/progressive.css";
+
+@import "../components/reset-tray";
+
+@import "../fonts/bebas-neue";
+@import "../fonts/gotham-book";
+@import "../fonts/gotham-medium";
+@import "../fonts/gotham-bold";
+@import "../fonts/gotham-black";
+@import "../fonts/sporty";
+
+
+@import "../components/variables";
+
+@import "descontos-fut/home";
+@import "descontos-fut/king";
+@import "descontos-fut/details";
+@import "descontos-fut/vitrine";
+@import "descontos-fut/chronology";
+@import "descontos-fut/curiosity";
+@import "../fonts/icons-font";
+@mixin md{
+    @media (min-width: 1200px) { @content; }
+}
