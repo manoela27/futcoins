@@ -236,88 +236,168 @@ p{
     }
 }
 .c-home{
-    background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/supercraquepele/bg-mob-pele.png');
-    min-height: 100vh; 
-    
-    position: relative;
+    background-color:#FFFFFF;
+    min-height: 80vh; 
+    display: flex;
+    align-items: center;
     justify-content: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    
+
     @include md{
-        background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/supercraquepele/bg-desk-pele.png');
+        background-color:#FFFFFF;
     }
-
     .home{
-        &-shield{
+        &-icon{
+            position:absolute;
 
+            &-cart{
+                top: -80%;
+                left: 5%;
+                height: 170px;
+                animation: pulse 3s ease-in-out infinite;
+
+                @keyframes pulse {
+                    0%{
+                        transform: scale(1) rotate(0deg);
+                    }
+                    50%{
+                        transform: scale(1.1) rotate(30deg);
+                        }
+                    100%{
+                        transform:scale(1) rotate(0deg);
+                    }      
+                }
+
+
+
+            }
+            
+            &-star_minor{
+                bottom: -40%;
+                left: 10%;
+                animation: brilhar 2s ease-in-out infinite;
+
+                @keyframes brilhar {
+                    0%{
+                        transform: scale(1) ;
+                    }
+                    50%{
+                        transform: scale(1.3) ;
+                        }
+                    100%{
+                        transform:scale(1);
+                    }      
+                }
+            }
+
+            &-discount{
+                bottom: -70%;
+                left: 15%;
+                width: 150px;
+                animation: discount 2s ease-in-out infinite;
+
+                @keyframes discount {
+                    0%{
+                        transform: rotate(0deg) ;
+                    }
+                    50%{
+                        transform: rotate(10deg) ;
+                        }
+                    100%{
+                        transform:rotate(0deg);
+                    }      
+                }
+            }
+
+            &_risco{
+                top: 41%;
+                left: 50%;
+            }
+            &-star_bigger{
+                left: 31%;
+                height: 70px;
+                bottom: -7%;
+                animation: brilhargrande 3s ease-in-out infinite;
+
+                @keyframes brilhargrande {
+                    0%{
+                        transform: scale(1) ;
+                    }
+                    50%{
+                        transform: scale(1.2) ;
+                        }
+                    100%{
+                        transform:scale(1);
+                    }      
+                }
+            }
+            &-star_bigger-right{
+                right: 10%;
+                top: -40%;
+                animation: brilhargrande 3s ease-in-out infinite;
+
+                @keyframes brilhargrande {
+                    0%{
+                        transform: scale(1) ;
+                    }
+                    50%{
+                        transform: scale(1.2) ;
+                        }
+                    100%{
+                        transform:scale(1);
+                    }      
+                }
+            }
+            &-star_minor-right{
+                top: -60%;
+                right: 20%;
+                animation: brilhar 2s ease-in-out infinite;
+
+                @keyframes brilhar {
+                    0%{
+                        transform: scale(1) ;
+                    }
+                    50%{
+                        transform: scale(1.3) ;
+                        }
+                    100%{
+                        transform:scale(1);
+                    }      
+                }
+            }
+            &-cupom{
+                right: 8%;
+                bottom: -65%;
+                animation: cupom 3s ease-in-out infinite;
+
+                @keyframes cupom {
+                    0%{
+                        transform: scale(1) ;
+                    }
+                    50%{
+                        transform: scale(1.1);
+                        }
+                    100%{
+                        transform:scale(1);
+                    }      
+                }
+            }
         }
-        &-text{
-            color:#FFFFFF;
-
-            &_title{
-                height: 60px;
-                text-align: center;
-
-                @include md{
-                    min-height: 100px;
-                }
-            }
-
-            &_subtitle{
-                font-size: 35px;
-                font-weight: 700;
-                padding-top: 12px;
-                padding-bottom: 24px;
-                text-align: center;
-
-                @include md{
-                    text-align: start;
-                    font-size: 30px;
-                }
-            }
-            &_content{
-                padding-top: 16px;
-                font-size: 18px;
-                text-align: center;
-                margin-bottom: 32px;
-                
-
-                @include md{
-                    padding-top: 0;
-                    font-size: 20px;
-                    margin-bottom: 0px;
-                    padding: 0px 80px;
-                }
-                
-            }
+        &-title{
+            text-align: center;
+            font-size: 70px;
+            color: #000000;
+            z-index: 2;
         }
     }
-
-    .icon-home{
-        position: absolute;
-        bottom: 20px;
-        color: #fff;
-        left: 49%;
-        font-size: 40px;
-        animation: icon-down 3s linear infinite;
-
-        @keyframes icon-down {
-            0%{
-                transform:translateY(0px);
-            }
-            50%{
-                transform:translateY(10px);
-            }
-            100%{
-                transform:translateY(0px);
-            }
-        }
-        @include md{
-            bottom: 3%;
-            font-size: 30px;
-        }
+    .container-title{
+        display: flex;
+        justify-content: center;
+    }
+    .box-title{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 60%;
     }
         
 }

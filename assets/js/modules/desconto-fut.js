@@ -4,7 +4,7 @@
 	var containerwin = $(".win__slick")
 	var containerdetails = $(".slick__details")
 	var containerCupom = $(".slick__cupom")
-	var containerCuriositymob = $(".slick__mob_curiosity")
+	var containerCopy = $(".slick__copy-cupom")
 	
 
 
@@ -29,7 +29,7 @@
 			}]
 	});
 
-	containerCuriositymob.slick({
+	containerCopy.slick({
 		autoplay: false,
 		autoplaySpeed: 4000,
 		pauseOnFocus: false,
@@ -37,7 +37,7 @@
 		arrows:false,
 		dots: true,
 		adaptiveHeight: true,
-		slidesToShow: 1,
+		slidesToShow: 3,
 		slidesToScroll: 1,
 		responsive: [{
 			breakpoint: 768,
