@@ -256,7 +256,21 @@
 	}
     
 	
-
+	$('.btn-copy').on('click', function(){
+		$('.copy-box-img').css({
+			'display':'none',
+		});
+		$('.copy-box-text').css({
+			'height':'100%',
+			'border-radius':'10px',
+		});
+		$('.rules-card').css({
+			'display':'flex',
+			'flex-direction':'column',
+			'align-items':'center',
+			'justify-center':'center',
+		})
+	});
 
 
 	function copyToClipboard(element) {
