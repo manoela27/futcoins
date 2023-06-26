@@ -18,7 +18,11 @@
             font-weight: 800;
             color: #000;
             margin-bottom: 0;
-            font-size: 55px;
+            font-size: 50px;
+            text-align: center;
+            @include md{
+                font-size: 55px;
+            }
         }
         &-subtitle{
             font-weight: 400;
@@ -37,6 +41,10 @@
             .img-copy{
                 width: 100%;
             }
+
+            &.active{
+                display: none;
+            }
         }
         &-box-text{
             background-color: #fff;
@@ -44,9 +52,8 @@
             border-radius:0px 0px 10px 10px;
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
-
+            justify-content: center;
         }
         &-name_cupom{
             font-size: 18px;
@@ -81,18 +88,24 @@
     .rules{
         &-card{
             display: none;
+            padding: 0px 30px;
+            padding-top: 42px;
+            margin-bottom: 16px;
+            height: 170px;
         }
         &-title{
             color: #000;
-            font-size:18px;
-            font-weight: 600;
+            font-size: 18px;
+            font-weight: 700;
             padding-bottom: 8px;
+            margin-bottom: 0px;
         }
         &-describe{
             font-size: 16px;
-            font-weight: 300;
+            font-weight: 400;
         }
     }
+
             .btn-copy{
                 background-color: #00DF5E;
                 height: 35px;
@@ -108,7 +121,46 @@
                 cursor: pointer;
                 text-decoration: none;
                 text-transform: uppercase;
+
+                &-cupom{
+                    background-color: #00DF5E;
+                    height: 35px;
+                    margin-bottom: 0;
+                    padding: 0px 5px;
+                    border-radius: 5px ;
+                    width: 100px;
+                    display: flex;
+                    justify-content: center;
+                    color: #000;
+                    font-weight: 700;
+                    align-items: center;
+                    cursor: pointer;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    
+                    
+                }
             }
+            .box-cupom{
+                display: none;
+
+                &.active{
+                    display: flex;
+                }
+            }
+            .cupom{
+                border: 2px dashed #00DF5E;
+                color: #000;
+                font-weight: 700;
+                border-right: none;
+                border-radius: 5px 0px 0px 5px;
+                font-size: 16px;
+                padding: 4px 0px;
+                width: 140px;
+                display: flex;
+                justify-content: center;
+            }
+
     .slick__copy-cupom{
         .item{
             padding-right: 8px;
@@ -123,6 +175,8 @@
             display: flex;
             justify-content: center;
             position: absolute;
+            left: 50%;
+            transform: translate(-50%);
 
             @include md{
                 left: 50%;

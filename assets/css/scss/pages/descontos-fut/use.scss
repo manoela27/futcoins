@@ -37,8 +37,12 @@
             padding: 50px;
             height: 200px;
             width: 300px;
+            margin-bottom: 40px;
             position: relative;
             
+            @include md{
+                margin-bottom: 0px;
+            }
         }
         &-stape{
             background-color: #03E44A;
@@ -61,6 +65,12 @@
     .cupom{
         .item{
             margin-left: 16px;
+        }
+        flex-direction: column;
+        align-items: center;
+
+        @include md{
+            flex-direction: row;
         }
     }
 }

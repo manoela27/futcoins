@@ -1225,9 +1225,9 @@ p {
   position: absolute;
 }
 .c-home .home-icon-cart {
-  top: -80%;
+  top: -150%;
   left: 5%;
-  height: 170px;
+  height: 120px;
   animation: pulse 3s ease-in-out infinite;
 }
 @keyframes pulse {
@@ -1241,8 +1241,15 @@ p {
     transform: scale(1) rotate(0deg);
   }
 }
+@media (min-width: 1200px) {
+  .c-home .home-icon-cart {
+    height: 170px;
+    top: -80%;
+    left: 5%;
+  }
+}
 .c-home .home-icon-star_minor {
-  bottom: -40%;
+  bottom: 0%;
   left: 10%;
   animation: brilhar 2s ease-in-out infinite;
 }
@@ -1257,10 +1264,15 @@ p {
     transform: scale(1);
   }
 }
+@media (min-width: 1200px) {
+  .c-home .home-icon-star_minor {
+    bottom: -40%;
+  }
+}
 .c-home .home-icon-discount {
-  bottom: -70%;
-  left: 15%;
-  width: 150px;
+  bottom: -140%;
+  left: 5%;
+  width: 135px;
   animation: discount 2s ease-in-out infinite;
 }
 @keyframes discount {
@@ -1274,15 +1286,31 @@ p {
     transform: rotate(0deg);
   }
 }
+@media (min-width: 1200px) {
+  .c-home .home-icon-discount {
+    bottom: -70%;
+    left: 15%;
+    width: 150px;
+  }
+}
 .c-home .home-icon_risco {
   top: 41%;
-  left: 50%;
+  left: 55%;
+  width: 150px;
+}
+@media (min-width: 1200px) {
+  .c-home .home-icon_risco {
+    top: 41%;
+    left: 50%;
+    width: 270px;
+  }
 }
 .c-home .home-icon-star_bigger {
   left: 31%;
   height: 70px;
   bottom: -7%;
   animation: brilhargrande 3s ease-in-out infinite;
+  display: none;
 }
 @keyframes brilhargrande {
   0% {
@@ -1293,12 +1321,18 @@ p {
   }
   100% {
     transform: scale(1);
+  }
+}
+@media (min-width: 1200px) {
+  .c-home .home-icon-star_bigger {
+    display: block;
   }
 }
 .c-home .home-icon-star_bigger-right {
   right: 10%;
   top: -40%;
   animation: brilhargrande 3s ease-in-out infinite;
+  height: 50px;
 }
 @keyframes brilhargrande {
   0% {
@@ -1309,6 +1343,11 @@ p {
   }
   100% {
     transform: scale(1);
+  }
+}
+@media (min-width: 1200px) {
+  .c-home .home-icon-star_bigger-right {
+    height: 70px;
   }
 }
 .c-home .home-icon-star_minor-right {
@@ -1329,7 +1368,8 @@ p {
 }
 .c-home .home-icon-cupom {
   right: 8%;
-  bottom: -65%;
+  bottom: -85%;
+  width: 120px;
   animation: cupom 3s ease-in-out infinite;
 }
 @keyframes cupom {
@@ -1343,11 +1383,22 @@ p {
     transform: scale(1);
   }
 }
+@media (min-width: 1200px) {
+  .c-home .home-icon-cupom {
+    bottom: -65%;
+    width: 150px;
+  }
+}
 .c-home .home-title {
   text-align: center;
-  font-size: 70px;
+  font-size: 42px;
   color: #000000;
   z-index: 2;
+}
+@media (min-width: 1200px) {
+  .c-home .home-title {
+    font-size: 70px;
+  }
 }
 .c-home .container-title {
   display: flex;
@@ -1357,7 +1408,11 @@ p {
   position: relative;
   display: flex;
   justify-content: center;
-  width: 60%;
+}
+@media (min-width: 1200px) {
+  .c-home .box-title {
+    width: 60%;
+  }
 }
 
 .c-copy {
@@ -1375,7 +1430,13 @@ p {
   font-weight: 800;
   color: #000;
   margin-bottom: 0;
-  font-size: 55px;
+  font-size: 50px;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .c-copy .copy-title {
+    font-size: 55px;
+  }
 }
 .c-copy .copy-subtitle {
   font-weight: 400;
@@ -1395,14 +1456,17 @@ p {
 .c-copy .copy-box-img .img-copy {
   width: 100%;
 }
+.c-copy .copy-box-img.active {
+  display: none;
+}
 .c-copy .copy-box-text {
   background-color: #fff;
   height: 49%;
   border-radius: 0px 0px 10px 10px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 .c-copy .copy-name_cupom {
   font-size: 18px;
@@ -1431,16 +1495,21 @@ p {
 }
 .c-copy .rules-card {
   display: none;
+  padding: 0px 30px;
+  padding-top: 42px;
+  margin-bottom: 16px;
+  height: 170px;
 }
 .c-copy .rules-title {
   color: #000;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
   padding-bottom: 8px;
+  margin-bottom: 0px;
 }
 .c-copy .rules-describe {
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
 }
 .c-copy .btn-copy {
   background-color: #00DF5E;
@@ -1458,6 +1527,40 @@ p {
   text-decoration: none;
   text-transform: uppercase;
 }
+.c-copy .btn-copy-cupom {
+  background-color: #00DF5E;
+  height: 35px;
+  margin-bottom: 0;
+  padding: 0px 5px;
+  border-radius: 5px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  color: #000;
+  font-weight: 700;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.c-copy .box-cupom {
+  display: none;
+}
+.c-copy .box-cupom.active {
+  display: flex;
+}
+.c-copy .cupom {
+  border: 2px dashed #00DF5E;
+  color: #000;
+  font-weight: 700;
+  border-right: none;
+  border-radius: 5px 0px 0px 5px;
+  font-size: 16px;
+  padding: 4px 0px;
+  width: 140px;
+  display: flex;
+  justify-content: center;
+}
 .c-copy .slick__copy-cupom .item {
   padding-right: 8px;
   display: flex !important;
@@ -1470,6 +1573,8 @@ p {
   display: flex;
   justify-content: center;
   position: absolute;
+  left: 50%;
+  transform: translate(-50%);
 }
 @media (min-width: 1200px) {
   .c-copy .slick__copy-cupom .slick-dots {
@@ -1854,7 +1959,13 @@ p {
   padding: 50px;
   height: 200px;
   width: 300px;
+  margin-bottom: 40px;
   position: relative;
+}
+@media (min-width: 1200px) {
+  .c-use .use-card {
+    margin-bottom: 0px;
+  }
 }
 .c-use .use-stape {
   background-color: #03E44A;
@@ -1872,8 +1983,17 @@ p {
   text-align: center;
   font-weight: 600;
 }
+.c-use .cupom {
+  flex-direction: column;
+  align-items: center;
+}
 .c-use .cupom .item {
   margin-left: 16px;
+}
+@media (min-width: 1200px) {
+  .c-use .cupom {
+    flex-direction: row;
+  }
 }
 
 @font-face {

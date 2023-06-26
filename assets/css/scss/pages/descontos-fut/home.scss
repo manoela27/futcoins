@@ -250,9 +250,9 @@ p{
             position:absolute;
 
             &-cart{
-                top: -80%;
+                top: -150%;
                 left: 5%;
-                height: 170px;
+                height: 120px;
                 animation: pulse 3s ease-in-out infinite;
 
                 @keyframes pulse {
@@ -267,12 +267,15 @@ p{
                     }      
                 }
 
-
-
+                @include md{
+                    height: 170px;
+                    top: -80%;
+                    left: 5%;
+                }
             }
             
             &-star_minor{
-                bottom: -40%;
+                bottom: 0%;
                 left: 10%;
                 animation: brilhar 2s ease-in-out infinite;
 
@@ -287,12 +290,16 @@ p{
                         transform:scale(1);
                     }      
                 }
+
+                @include md{
+                    bottom: -40%;
+                }
             }
 
             &-discount{
-                bottom: -70%;
-                left: 15%;
-                width: 150px;
+                bottom: -140%;
+                left: 5%;
+                width: 135px;
                 animation: discount 2s ease-in-out infinite;
 
                 @keyframes discount {
@@ -306,17 +313,33 @@ p{
                         transform:rotate(0deg);
                     }      
                 }
+
+                @include md{
+                    bottom: -70%;
+                    left: 15%;
+                    width: 150px;
+                }
             }
 
             &_risco{
                 top: 41%;
-                left: 50%;
+                left: 55%;
+                width: 150px;
+                
+
+                @include md{
+                    top: 41%;
+                    left: 50%;
+                    width: 270px;
+                }
             }
+
             &-star_bigger{
                 left: 31%;
                 height: 70px;
                 bottom: -7%;
                 animation: brilhargrande 3s ease-in-out infinite;
+                display: none;
 
                 @keyframes brilhargrande {
                     0%{
@@ -329,11 +352,15 @@ p{
                         transform:scale(1);
                     }      
                 }
+                @include md{
+                    display: block;
+                }
             }
             &-star_bigger-right{
                 right: 10%;
                 top: -40%;
                 animation: brilhargrande 3s ease-in-out infinite;
+                height: 50px;
 
                 @keyframes brilhargrande {
                     0%{
@@ -345,6 +372,10 @@ p{
                     100%{
                         transform:scale(1);
                     }      
+                }
+
+                @include md{
+                    height: 70px;
                 }
             }
             &-star_minor-right{
@@ -366,7 +397,8 @@ p{
             }
             &-cupom{
                 right: 8%;
-                bottom: -65%;
+                bottom: -85%;
+                width: 120px;
                 animation: cupom 3s ease-in-out infinite;
 
                 @keyframes cupom {
@@ -380,13 +412,23 @@ p{
                         transform:scale(1);
                     }      
                 }
+
+                @include md{
+                    bottom: -65%;
+                    width: 150px;
+                }
             }
         }
         &-title{
             text-align: center;
-            font-size: 70px;
+            font-size: 42px;
             color: #000000;
             z-index: 2;
+
+
+            @include md{
+                font-size: 70px;
+            }
         }
     }
     .container-title{
@@ -397,7 +439,10 @@ p{
         position: relative;
         display: flex;
         justify-content: center;
-        width: 60%;
+        
+        @include md{
+            width: 60%;
+        }
     }
         
 }
