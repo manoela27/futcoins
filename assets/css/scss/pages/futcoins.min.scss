@@ -1,5 +1,5 @@
 
-//sass --watch assets/css/scss/pages/descontos-fut.min.scss:assets/css/descontos-fut.min.css
+//sass --watch assets/css/scss/pages/futcoins.min.scss:assets/css/futcoins.min.css
 
 $vitrine-blue: #192C53;
 $vitrine-gray: #747474;
@@ -18,9 +18,11 @@ $vitrine-gray: #747474;
 
 @import "../components/variables";
 
-@import "descontos-fut/home";
-@import "descontos-fut/copy";
-@import "descontos-fut/use";
+@import "futcoins/works";
+@import "futcoins/instruction";
+@import "futcoins/wallet";
+@import "futcoins/banner";
+@import "futcoins/help";
 @import "../fonts/icons-font";
 @mixin md{
     @media (min-width: 1200px) { @content; }

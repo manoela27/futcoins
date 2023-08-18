@@ -1050,523 +1050,103 @@ html .botao-lancamento:hover {
   src: url("fonts/sporty/SportyPro-Bold.otf") format("opentype");
 }
 /** PAGE PALMEIRAS **/
-header {
-  color: #000000;
+.c-works {
+  padding: 40px 0px;
 }
-header .logo {
-  color: #939393;
-}
-header .menu-mob-open {
-  color: #D7D7D7;
-}
-header .header-top {
-  background-color: #000000;
-}
-header .header-top .header-infos {
-  background-color: #000000;
-}
-header .header-top .header-infos .link-inter .icon-link-inter {
-  color: #939393;
-}
-header .header-top .header-infos .link-inter:hover a {
-  background-color: #939393;
-  color: #000000;
-}
-header .header-top .header-infos .link-inter:hover .icon-link-inter {
-  color: #000000;
-}
-header .header-top .header-nav {
-  background-color: #000000;
-  border: 1px solid #939393;
-  border-left: none;
-  border-right: none;
-}
-header .header-top .header-nav nav ul li.hover a::before {
-  background-color: #939393;
-}
-header .header-top .header-nav nav ul li .child-container {
-  background-color: #000000;
-}
-header .header-top .header-nav nav ul li .child-container ul li .menu-title {
-  color: #FFFFFF !important;
-}
-header .header-top .header-nav nav ul li .child-container ul li .see-all {
-  color: #939393;
-}
-header .header-top .header-nav nav ul li .child-container ul .menu-links a {
-  background-color: #939393;
-  color: #000000;
-}
-header .header-top .header-nav nav ul li .child-container ul .menu-links a:hover {
-  background-color: #FFFFFF;
-}
-header .header-top .header-nav nav ul li a {
-  color: #939393;
-}
-header .links-usuario a {
-  color: #939393;
-}
-header .links-usuario .central .menu-central {
-  background-color: #000000;
-}
-header .links-usuario .central .menu-central a {
-  color: #939393;
-}
-header .links-usuario .cart-header .menu-cart .cart-products li .product-data h3, header .links-usuario .cart-header .menu-cart .cart-added li .product-data h3, header .links-usuario .cart-header .cart-note .cart-products li .product-data h3, header .links-usuario .cart-header .cart-note .cart-added li .product-data h3 {
-  color: #939393;
-}
-header .links-usuario .cart-header .menu-cart .cart-products li .product-data .product-price, header .links-usuario .cart-header .menu-cart .cart-added li .product-data .product-price, header .links-usuario .cart-header .cart-note .cart-products li .product-data .product-price, header .links-usuario .cart-header .cart-note .cart-added li .product-data .product-price {
-  color: #939393;
-}
-header .links-usuario .cart-header .menu-cart {
-  background-color: #000000;
-  border: 1px solid #939393;
-}
-header .links-usuario .cart-header .menu-cart .cart-products .product-data h3 {
-  color: #939393;
-}
-header .links-usuario .cart-header .menu-cart .cart-products .product-data .product-price {
-  color: #939393;
-}
-header .links-usuario .cart-header .menu-cart .cart-subtotal {
-  color: #939393;
-}
-header .links-usuario .cart-header .menu-cart a {
-  background-color: #939393;
-  color: #000000;
-}
-
-@media (max-width: 991px) {
-  header .header-nav nav .nav-top {
-    background: #000000;
-    color: #D7D7D7;
-  }
-  header .header-nav nav .nav-top i {
-    color: #D7D7D7;
-  }
-  header .header-nav nav ul {
-    background: #1F1F1F;
-  }
-  header .header-nav nav ul li {
-    border-color: #404040;
-  }
-  header .header-nav nav ul li i {
-    color: #757575;
-  }
-  header .header-nav nav ul li.link-user {
-    background: #939393;
-  }
-  header .header-nav nav ul li.link-user a, header .header-nav nav ul li.link-user i {
-    color: #000000;
-  }
-  header .header-nav nav ul li.back {
-    background: #939393;
-    color: #000000;
-  }
-  header .header-nav nav ul li.back i {
-    color: #000000;
-  }
-  header .header-nav nav ul li a {
-    color: #D7D7D7;
-  }
-  header .header-nav nav ul li a.link-inter {
-    border-color: #D7D7D7 !important;
-  }
-  header .header-nav nav ul li.menu-feature {
-    background: #333333;
-  }
-  header .header-nav nav ul li.menu-feature a {
-    color: #D7D7D7;
-  }
-  footer {
-    background: black;
-    color: #404040;
-    border-top: 1px solid #757575;
-  }
-  footer .footer-menus h3[data-toggle=collapse] {
-    border-color: #404040;
-  }
-  footer .footer-menus h3[data-toggle=collapse] i {
-    color: #757575;
-  }
-  footer .footer-menus ul {
-    border-color: #000000;
-  }
-}
-p {
-  margin-bottom: 0px;
-}
-
-.topo {
-  position: absolute;
-  width: 100%;
-  height: 300px;
-}
-.topo .img-top {
-  width: 100%;
-  position: absolute;
-  top: 0px;
-  height: 300px;
-}
-
-.c-home {
-  background-color: #FFFFFF;
-  min-height: 80vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-@media (min-width: 1200px) {
-  .c-home {
-    background-color: #FFFFFF;
-  }
-}
-.c-home .home-icon {
-  position: absolute;
-}
-.c-home .home-icon-cart {
-  top: -150%;
-  left: 5%;
-  height: 120px;
-  animation: pulse 3s ease-in-out infinite;
-}
-@keyframes pulse {
-  0% {
-    transform: scale(1) rotate(0deg);
-  }
-  50% {
-    transform: scale(1.1) rotate(30deg);
-  }
-  100% {
-    transform: scale(1) rotate(0deg);
-  }
-}
-@media (min-width: 1200px) {
-  .c-home .home-icon-cart {
-    height: 170px;
-    top: -80%;
-    left: 5%;
-  }
-}
-.c-home .home-icon-star_minor {
-  bottom: 0%;
-  left: 10%;
-  animation: brilhar 2s ease-in-out infinite;
-}
-@keyframes brilhar {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.3);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-@media (min-width: 1200px) {
-  .c-home .home-icon-star_minor {
-    bottom: -40%;
-  }
-}
-.c-home .home-icon-discount {
-  bottom: -140%;
-  left: 5%;
-  width: 135px;
-  animation: discount 2s ease-in-out infinite;
-}
-@keyframes discount {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(10deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-@media (min-width: 1200px) {
-  .c-home .home-icon-discount {
-    bottom: -70%;
-    left: 15%;
-    width: 150px;
-  }
-}
-.c-home .home-icon_risco {
-  top: 41%;
-  left: 55%;
-  width: 150px;
-}
-@media (min-width: 1200px) {
-  .c-home .home-icon_risco {
-    top: 41%;
-    left: 50%;
-    width: 270px;
-  }
-}
-.c-home .home-icon-star_bigger {
-  left: 31%;
-  height: 70px;
-  bottom: -7%;
-  animation: brilhargrande 3s ease-in-out infinite;
-  display: none;
-}
-@keyframes brilhargrande {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-@media (min-width: 1200px) {
-  .c-home .home-icon-star_bigger {
-    display: block;
-  }
-}
-.c-home .home-icon-star_bigger-right {
-  right: 10%;
-  top: -40%;
-  animation: brilhargrande 3s ease-in-out infinite;
-  height: 50px;
-}
-@keyframes brilhargrande {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-@media (min-width: 1200px) {
-  .c-home .home-icon-star_bigger-right {
-    height: 70px;
-  }
-}
-.c-home .home-icon-star_minor-right {
-  top: -60%;
-  right: 20%;
-  animation: brilhar 2s ease-in-out infinite;
-}
-@keyframes brilhar {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.3);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-.c-home .home-icon-cupom {
-  right: 8%;
-  bottom: -85%;
-  width: 120px;
-  animation: cupom 3s ease-in-out infinite;
-}
-@keyframes cupom {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-@media (min-width: 1200px) {
-  .c-home .home-icon-cupom {
-    bottom: -65%;
-    width: 150px;
-  }
-}
-.c-home .home-title {
-  text-align: center;
-  font-size: 42px;
-  color: #000000;
-  z-index: 2;
-}
-@media (min-width: 1200px) {
-  .c-home .home-title {
-    font-size: 70px;
-  }
-}
-.c-home .container-title {
+.c-works .works-box {
   display: flex;
   justify-content: center;
 }
-.c-home .box-title {
-  position: relative;
+.c-works .works-box-content {
+  background-color: #00DF5E;
+  border-radius: 20px;
   display: flex;
-  justify-content: center;
-}
-@media (min-width: 1200px) {
-  .c-home .box-title {
-    width: 60%;
-  }
-}
-
-.c-copy {
-  background-color: #DCDCDC;
-  padding: 80px 0px;
-}
-.c-copy .box-title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-  margin-bottom: 24px;
-}
-.c-copy .copy-title {
-  font-weight: 800;
-  color: #000;
-  margin-bottom: 0;
-  font-size: 50px;
-  text-align: center;
+  align-items: center;
+  justify-content: center;
+  min-height: 14rem;
+  padding: 10px 20px 10px 20px;
 }
 @media (min-width: 1200px) {
-  .c-copy .copy-title {
-    font-size: 55px;
+  .c-works .works-box-content {
+    padding: 0px 40px;
+    min-height: 11rem;
   }
 }
-.c-copy .copy-subtitle {
-  font-weight: 400;
-  font-size: 17px;
-  padding-top: 8px;
+.c-works .works-describe {
+  text-align: center;
+  font-size: 16px;
 }
-.c-copy .copy-card {
-  height: 300px;
-  width: 280px;
-  border-radius: 10px;
+@media (min-width: 1200px) {
+  .c-works .works-describe {
+    font-size: 18px;
+  }
 }
-.c-copy .copy-box-img {
-  height: 50%;
-  background: url("/img/img-liquida.png");
-  border-radius: 10px 10px 0px 0px;
-}
-.c-copy .copy-box-img .img-copy {
-  width: 100%;
-}
-.c-copy .copy-box-img.active {
-  display: none;
-}
-.c-copy .copy-box-text {
+.c-works .works-function {
   background-color: #fff;
-  height: 49%;
-  border-radius: 0px 0px 10px 10px;
+  width: 220px;
+  height: 50px;
+  font-size: 16px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border: 3px solid #00DF5E;
+  color: #000000;
+  cursor: pointer;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 50px;
+  position: absolute;
+  top: 85%;
+}
+.c-works .works-function:hover {
+  text-decoration: none;
+}
+
+.c-instruction {
+  padding: 60px 0px;
+}
+@media (min-width: 1200px) {
+  .c-instruction {
+    background-color: #E6E6E6;
+  }
+}
+.c-instruction .instruction_slick .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  justify-content: center;
+}
+.c-instruction .instruction-box-img {
+  display: flex;
+  justify-content: center;
+}
+.c-instruction .instruction-box-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.c-copy .copy-name_cupom {
-  font-size: 18px;
+.c-instruction .instruction-title {
+  font-size: 22px;
   text-align: center;
-  font-weight: 600;
-  color: #000;
-  margin-bottom: 0;
-}
-.c-copy .copy-percent {
-  font-size: 50px;
-  font-weight: 800;
-  text-transform: uppercase;
-  line-height: 2rem;
-  margin-bottom: 16px;
-}
-.c-copy .copy-cupom {
-  padding: 5px 10px;
-  border: 1px dashed #00DF5E;
-  border-radius: 5px;
-  margin-top: 18px;
-}
-.c-copy .copy-cupom .text-copy-cupom {
-  color: #000;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-.c-copy .rules-card {
-  display: none;
-  padding: 0px 30px;
-  padding-top: 42px;
-  margin-bottom: 16px;
-  height: 170px;
-}
-.c-copy .rules-title {
-  color: #000;
-  font-size: 18px;
-  font-weight: 700;
   padding-bottom: 8px;
-  margin-bottom: 0px;
-}
-.c-copy .rules-describe {
-  font-size: 16px;
-  font-weight: 400;
-}
-.c-copy .btn-copy {
-  background-color: #00DF5E;
-  height: 35px;
-  margin-bottom: 0;
-  padding: 0px 5px;
-  border-radius: 5px;
-  width: 100px;
-  display: flex;
-  justify-content: center;
+  padding-top: 16px;
+  font-weight: 800;
   color: #000;
-  font-weight: 600;
-  align-items: center;
-  cursor: pointer;
-  text-decoration: none;
-  text-transform: uppercase;
 }
-.c-copy .btn-copy-cupom {
-  background-color: #00DF5E;
-  height: 35px;
-  margin-bottom: 0;
-  padding: 0px 5px;
-  border-radius: 5px;
-  width: 100px;
-  display: flex;
-  justify-content: center;
-  color: #000;
-  font-weight: 700;
-  align-items: center;
-  cursor: pointer;
-  text-decoration: none;
-  text-transform: uppercase;
+.c-instruction .instruction-describe {
+  font-size: 20px;
+  font-weight: 350;
+  text-align: center;
 }
-.c-copy .box-cupom {
-  display: none;
+@media (min-width: 1200px) {
+  .c-instruction .instruction-describe {
+    font-size: 16px;
+  }
 }
-.c-copy .box-cupom.active {
-  display: flex;
-}
-.c-copy .cupom {
-  border: 2px dashed #00DF5E;
-  color: #000;
-  font-weight: 700;
-  border-right: none;
-  border-radius: 5px 0px 0px 5px;
-  font-size: 16px;
-  padding: 4px 0px;
-  width: 140px;
-  display: flex;
-  justify-content: center;
-}
-.c-copy .slick__copy-cupom .item {
-  padding-right: 8px;
-  display: flex !important;
-  justify-content: center;
-}
-.c-copy .slick__copy-cupom .slick-dots {
+.c-instruction .slick-dots {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -1576,14 +1156,7 @@ p {
   left: 50%;
   transform: translate(-50%);
 }
-@media (min-width: 1200px) {
-  .c-copy .slick__copy-cupom .slick-dots {
-    left: 50%;
-    transform: translate(-50%);
-    margin-top: 24px;
-  }
-}
-.c-copy .slick__copy-cupom .slick-dots button {
+.c-instruction .slick-dots button {
   font-size: 0;
   background: #717171;
   width: 20px;
@@ -1595,79 +1168,226 @@ p {
   outline: none;
   transition: all 0.2s ease;
 }
-.c-copy .slick__copy-cupom .slick-dots li.slick-active button {
+.c-instruction .slick-dots li.slick-active button {
   opacity: 1;
   width: 40px;
   background: #000000;
 }
 
-.c-use {
-  padding: 60px 0px;
-  background-color: #192C53;
+.c-wallet {
+  padding: 60px 20px;
+  background-color: #E6E6E6;
 }
-.c-use .box-title {
+@media (min-width: 1200px) {
+  .c-wallet {
+    padding: 60px 0px 100px 0px;
+  }
+}
+.c-wallet .wallet-box {
+  background-color: #fff;
+  border-radius: 30px;
+}
+.c-wallet .wallet-box-img {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+@media (min-width: 1200px) {
+  .c-wallet .wallet-box-img {
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+  }
+}
+.c-wallet .wallet-box-content {
+  padding: 30px;
+}
+@media (min-width: 1200px) {
+  .c-wallet .wallet-box-content {
+    padding: 0 50px 0px 0px;
+  }
+}
+.c-wallet .wallet-toptitle {
+  font-size: 16px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .c-wallet .wallet-toptitle {
+    text-align: start;
+  }
+}
+.c-wallet .wallet-title {
+  font-size: 27px;
+  color: #000;
+  text-align: center;
+  padding-bottom: 32px;
+}
+.c-wallet .wallet-title strong {
+  font-weight: 800;
+}
+@media (min-width: 1200px) {
+  .c-wallet .wallet-title {
+    font-size: 40px;
+    text-align: start;
+  }
+}
+.c-wallet .wallet-equal {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.c-wallet .wallet-equal-img {
+  width: 45px;
+  height: 45px;
+  margin: -10px 0px;
+  z-index: 999;
+}
+@media (min-width: 1200px) {
+  .c-wallet .wallet-equal-img {
+    margin: 0px -10px;
+  }
+}
+@media (min-width: 1200px) {
+  .c-wallet .wallet-equal {
+    flex-direction: row;
+  }
+}
+.c-wallet .wallet-futcoin {
+  width: 220px;
+  text-align: center;
+  font-weight: 800;
+  color: #000;
+  padding: 15px 50px;
+  background-color: #00DF5E;
+  border: 2px #00DF5E solid;
+  border-radius: 10px;
+  font-size: 25px;
+}
+@media (min-width: 1200px) {
+  .c-wallet .wallet-futcoin {
+    width: auto;
+  }
+}
+.c-wallet .wallet-futcoin_real {
+  background-color: transparent;
+}
+
+.c-banner {
+  background: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/banner-futcoin.png");
+  min-height: 50vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.c-help {
+  padding: 60px 20px;
+  background-color: #E6E6E6;
+}
+@media (min-width: 1200px) {
+  .c-help {
+    padding: 60px 0px;
+  }
+}
+.c-help .help-box-title {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 48px;
 }
-.c-use .use-title {
-  font-size: 50px;
+.c-help .help-toptitle {
+  letter-spacing: 5px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #000;
+  margin-bottom: 0px;
+}
+.c-help .help-title {
+  color: #000;
   font-weight: 700;
-  color: #FFF;
-  margin-bottom: 0;
+  padding-bottom: 8px;
+  font-size: 40px;
   text-align: center;
-}
-.c-use .use-subtitle {
-  font-size: 20px;
-  font-weight: 300;
-  padding-top: 8px;
-  text-align: center;
-  color: #FFF;
-}
-.c-use .use-card {
-  border: 1px #2954AD solid;
-  border-radius: 10px;
-  background-color: #0E1B36;
-  padding: 50px;
-  height: 200px;
-  width: 300px;
-  margin-bottom: 40px;
-  position: relative;
 }
 @media (min-width: 1200px) {
-  .c-use .use-card {
-    margin-bottom: 0px;
+  .c-help .help-title {
+    text-align: start;
+    font-size: 45px;
   }
 }
-.c-use .use-stape {
-  background-color: #03E44A;
-  color: #192C53;
-  padding: 5px 10px;
-  border-radius: 5px;
+.c-help .help-bottomtitle {
+  font-size: 16px;
+  font-weight: 400;
+  padding-bottom: 30px;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .c-help .help-bottomtitle {
+    font-size: 18px;
+    text-align: start;
+  }
+}
+.c-help .help_slick .item {
+  padding: 8px;
+}
+.c-help .help-card {
+  background-color: #fff;
+  padding: 0px 24px;
+  height: 150px;
+  width: 250px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.c-help .help-card .help-question {
+  color: #000;
+  font-weight: 600;
+  text-align: center;
+  font-size: 17px;
+}
+.c-help .help-card.active {
+  display: none;
+  background-color: #C1C1C1;
+}
+.c-help .help-card.active .help-question {
+  color: #FFF;
+  font-weight: 600;
+  text-align: center;
+  font-size: 14px;
+}
+.c-help .item:hover .help-card {
+  display: none;
+}
+.c-help .item:hover .help-card.active {
+  display: flex;
+}
+.c-help .slick-dots {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
   position: absolute;
-  top: -20px;
-  font-weight: 700;
+  margin-top: 24px;
   left: 50%;
   transform: translate(-50%);
 }
-.c-use .use-describe {
-  color: #fff;
-  text-align: center;
-  font-weight: 600;
+.c-help .slick-dots button {
+  font-size: 0;
+  background: #717171;
+  width: 20px;
+  height: 6px;
+  border-radius: 4px;
+  border: 0;
+  margin: 0 5px;
+  opacity: 0.3;
+  outline: none;
+  transition: all 0.2s ease;
 }
-.c-use .cupom {
-  flex-direction: column;
-  align-items: center;
-}
-.c-use .cupom .item {
-  margin-left: 16px;
-}
-@media (min-width: 1200px) {
-  .c-use .cupom {
-    flex-direction: row;
-  }
+.c-help .slick-dots li.slick-active button {
+  opacity: 1;
+  width: 40px;
+  background: #000000;
 }
 
 @font-face {
@@ -2119,4 +1839,4 @@ p {
   content: "\e95e";
 }
 
-/*# sourceMappingURL=descontos-fut.min.css.map */
+/*# sourceMappingURL=futcoins.min.css.map */
